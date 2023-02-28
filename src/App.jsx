@@ -10,7 +10,7 @@ const App = () => {
   return (
     <>
       <Navigation />
-      <Signup />
+      <ProductListing />
       <Footer />
     </>
   )
