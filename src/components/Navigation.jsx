@@ -11,21 +11,23 @@ const Navigation = () => {
   }
 
   return (
-    <header>
-      <div className='logo'>
-        <img src={Logo} />
-        <span className='logo-text'>ShopOnline</span>
-      </div>
-      <nav ref={navRef}>
-        <a href='#'>Home</a>
-        <a href='#'>About</a>
-        <a href='#'>Products</a>
-        <a href='#'>Contact</a>
-        <FaTimes className='nav-btn nav-close' onClick={showNavbar} />
-      </nav>
-      <div className='login'>Login</div>
-      <FaBars className='nav-btn' onClick={showNavbar} />
-    </header>
+    <div className='wrapper-header'>
+      <header>
+        <div className='logo'>
+          <img src={Logo} />
+          <span className='logo-text'>ShopOnline</span>
+        </div>
+        <nav ref={navRef}>
+          <a href='#'>Home</a>
+          <a href='#'>About</a>
+          <a href='#'>Products</a>
+          <a href='#'>Contact</a>
+          <FaTimes className='nav-btn nav-close' onClick={showNavbar} />
+        </nav>
+        <div className='login'>Login</div>
+        <FaBars className='nav-btn' onClick={showNavbar} />
+      </header>
+    </div>
   )
 }
 
